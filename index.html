@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 PANDEMIC IN UKRAINE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    
+<header class="header">
+  <h1 class="main-heading">COVID-19 PANDEMIC IN UKRAINE</h1>
+  <p>updated statistics of coronavirus in Ukraine</p>
+</header>
+    
+<h2 class="sub-heading">General Statistics</h2>
+<div class="container-fluid">
+  <div class="row">
+   
+      <!-- CASES CARD -->
+      <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card1 mb-3" style="max-width: 18rem;">
+              <div class="card-heading card-header text-center">CASES</div>
+              <div class="card-body">
+                <p class="cases card-text text-center">&nbsp;</p>
+              </div>
+            </div>
+      </div>
+
+      <!-- DEATHS CASES -->
+
+      <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card2 mb-3" style="max-width: 18rem;">
+              <div class="card-heading card-header text-center">DEATHS</div>
+              <div class="card-body">
+                <p class="deaths card-text text-center">&nbsp;</p>
+              </div>
+            </div>
+      </div>
+
+      
+      <!-- RECOVERED CASES CARD -->
+
+      <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card3 mb-3" style="max-width: 18rem;">
+              <div class="card-heading card-header text-center">RECOVERED </div>
+              <div class="card-body">
+                <p class="recovered card-text text-center">&nbsp;</p>
+              </div>
+
+      </div>
+  </div>
+      
+       
+
+      <!-- ACTIVE CARD -->
+      <div class="col-lg-3 d-flex justify-content-center">
+      <div class="card4 mb-3" style="max-width: 18rem;">
+          <div class="card-heading card-header text-center">ACTIVE</div>
+          <div class="card-body">
+            <p class="active card-text text-center">&nbsp;</p>
+          </div>
+        </div>
+        </div>
+
+      
+</div>
+</div>
+
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <h2 class="sub-heading">Today's Statistics</h2> 
+  <div class="container-fluid">
+    <div class="row">
+      
+  
+        <!-- TODAY CASES -->
+        <div class="col-lg-3 d-flex justify-content-center">
+            <div class="card5 mb-3" style="max-width: 18rem;">
+                <div class="card-heading card-header text-center">TODAY CASES</div>
+                <div class="card-body">
+                  <p class="todayCases card-text text-center">&nbsp;</p>
+                </div>
+              </div>
+        </div>
+  
+        <!-- TODAY DEATHS -->
+  
+        <div class="col-lg-3 d-flex justify-content-center">
+            <div class="card6 mb-3" style="max-width: 18rem;">
+                <div class="card-heading card-header text-center">TODAY DEATHS</div>
+                <div class="card-body">
+                  <p class="todayDeaths card-text text-center">&nbsp;</p>
+                </div>
+              </div>
+        </div>
+  
+        
+        <!-- TODAY RECOVERED -->
+  
+        <div class="col-lg-3 d-flex justify-content-center">
+            <div class="card7 mb-3" style="max-width: 18rem;">
+                <div class="card-heading card-header text-center">TODAY RECOVERED</div>
+                <div class="card-body">
+                  <p class="todayRecovered card-text text-center">&nbsp;</p>
+                </div>
+  
+        </div>
+    </div>
+        
+         
+  
+        <!-- CASES PER MILION -->
+        <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card8 mb-3" style="max-width: 18rem;">
+            <div class="card-heading card-header text-center">DEATHS PER MILION</div>
+            <div class="card-body">
+              <p class="deathsPerMilion card-text text-center">&nbsp;</p>
+            </div>
+          </div>
+          </div>
+  
+        
+  </div>
+  </div>
+   
+  <div class="chart-container">
+    <canvas id="myChart1"></canvas>
+  </div>
+
+  <footer>
+    <p class="footer-p">© 2021, Vladyslav Horbachenko</p>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
